@@ -18,7 +18,7 @@ velocityZ = 0;
 timeHorizon = 1:200;
 
 # Creating three vectors of zeros of X-,Y- and Z- axis
-for (a in 1:200) {
+for (a in 1:length(X)) {
   velocityX[a] = 0;
   velocityY[a] = 0;
   velocityZ[a] = 0;
@@ -45,7 +45,7 @@ numberOfStepsY = (velocityCurentY*length(Y))/0.8
 numberOfStepsZ = (velocityCurentZ*length(Z))/0.8
 
 #plot
-plot(timeHorizon, velocityX, col = "black")
-lines(timeHorizon,velocityY, col = "blue")
+plot(timeHorizon, velocityX, type = "o", col = "black")
+lines(timeHorizon,velocityY, type = "p", col = "blue")
 lines(timeHorizon, velocityZ, col = "red")
 title(main = "gráfico de Velocidade", xlab = "time", ylab = "Velocity", line = NA)
