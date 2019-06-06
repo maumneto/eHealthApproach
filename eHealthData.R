@@ -7,10 +7,11 @@
   rm(list=ls(all=TRUE));
   ## Setting parameters
   # Load the Health data
+  path = "Desktop/eHealthApproach/mHealth_subject2.log"
   
   HealthDataSerie <- function(column){
   
-    healthData <- read.table("C:\\Users\\MaurícioM\\Downloads\\MHEALTHDATASET\\mHealth_subject1.log", header = FALSE, sep = "");
+    healthData <- read.table(path, header = FALSE, sep = "");
     
     if (column == 1){
       dataAccelerationChestX <- as.double(healthData$V1);

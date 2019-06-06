@@ -1,7 +1,10 @@
 ## preparing the workspace for new simulations
 rm(list=ls(all=TRUE));
+
+path = "Desktop/eHealthApproach/eHealthData.R"
+
 # Using the dataset 
-source("C:\\Users\\Mauricio\\Downloads\\eHealthApproach-master\\eHealthData.R");
+source(path);
 
 # Assignment of data column values
 valueDataX <- HealthDataSerie(15);
@@ -45,7 +48,7 @@ numberOfStepsY = (velocityCurentY*length(Y))/0.8
 numberOfStepsZ = (velocityCurentZ*length(Z))/0.8
 
 #plot
-plot(timeHorizon, velocityX, type = "o", col = "black")
-lines(timeHorizon,velocityY, type = "p", col = "blue")
-lines(timeHorizon, velocityZ, col = "red")
-title(main = "gráfico de Velocidade", xlab = "time", ylab = "Velocity", line = NA)
+#plot(timeHorizon, velocityX, type = "o", col = "black")
+#lines(timeHorizon,velocityY, type = "p", col = "blue")
+#lines(timeHorizon, velocityZ, col = "red")
+#title(main = "gr?fico de Velocidade", xlab = "time", ylab = "Velocity", line = NA)

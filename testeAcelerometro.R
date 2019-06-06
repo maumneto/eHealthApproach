@@ -1,7 +1,10 @@
 ## preparing the workspace for new simulations
 rm(list=ls(all=TRUE));
 
-source("C:\\Users\\MaurícioM\\OneDrive\\Documentos\\eHealthData.R");
+path = "Desktop/eHealthApproach/eHealthData.R"
+
+
+source(path);
 
 valueDataX <- HealthDataSerie(15);
 valueDataY <- HealthDataSerie(16);
