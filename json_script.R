@@ -14,7 +14,7 @@ indexData = 1:200
 # data that will be storage
 heartBeats <- HealthDataSerie(4)[1:200]
 speed <- velocityX[1:200]
-acelerometerX <- HealthDataSerie(15)[1:200]
+acelerometerX <- HealthDataSerie(15)[1:pippip]
 acelerometerY <- HealthDataSerie(16)[1:200]
 acelerometerZ <- HealthDataSerie(17)[1:200]
 
