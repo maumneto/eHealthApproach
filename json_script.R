@@ -14,7 +14,7 @@ indexData = 1:200
 # data that will be storage
 heartBeats <- HealthDataSerie(4)[1:200]
 speed <- velocityX[1:200]
-acelerometerX <- HealthDataSerie(15)[1:pippip]
+acelerometerX <- HealthDataSerie(15)[1:200]
 acelerometerY <- HealthDataSerie(16)[1:200]
 acelerometerZ <- HealthDataSerie(17)[1:200]
 
@@ -22,10 +22,12 @@ acelerometerZ <- HealthDataSerie(17)[1:200]
 eHealthData <- data.frame(heartBeats, speed, acelerometerX, acelerometerY, acelerometerZ, indexData)
 
 # creating a jsonData
-eHealthDataJson <- toJSON(eHealthData, pretty = TRUE)
+eHealthDataJson <- toJSON(eHealthData, pretty = FALSE)
 
 # saving the json in the project
-save(eHealthDataJson, file="Desktop/eHealthApproach/mhealthdata.json")
+write_json(eHealthData, path = "Desktop/eHealthApproach/dataehealth.json")
 
 # show the json
 eHealthDataJson
+
+
